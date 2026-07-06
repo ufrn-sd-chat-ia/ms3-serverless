@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ms3-serverless
+  config:
+    import: "optional:configserver:http://localhost:8888"
+  cloud:
+    function:
+      definition: validarNota
