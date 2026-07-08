@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 // @RefreshScope: permite mudar boletim.avaliacao.* no chat-configs e refletir
-// aqui via POST /actuator/refresh, sem reiniciar o serviço (Fase 7).
+// aqui via POST /actuator/refresh, sem reiniciar o serviço.
 @RefreshScope
 @ConfigurationProperties(prefix = "boletim.avaliacao")
 public class RegrasAvaliacaoProperties {
